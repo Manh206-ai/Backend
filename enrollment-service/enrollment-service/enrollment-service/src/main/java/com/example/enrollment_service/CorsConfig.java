@@ -1,4 +1,4 @@
-package com.example.studentservice; // Đổi package này theo đúng tên gói của service bạn đang làm
+package com.example.enrollment_service; // Đổi package này theo đúng tên gói của service bạn đang làm
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
