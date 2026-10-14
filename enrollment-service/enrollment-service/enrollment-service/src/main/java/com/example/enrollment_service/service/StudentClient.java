@@ -18,7 +18,8 @@ public class StudentClient {
     @Retryable(maxAttempts = 3, retryFor = Exception.class)
     public ResponseEntity<String> callStudentService(int studentId) {
         return restClient.get()
-                .uri("http://localhost:8080/api/students/" + studentId)
+                // Đã thay đổi URL từ localhost sang URL thực tế của Student Service trên Render
+                .uri("https://studentservice-h77a.onrender.com/api/students/" + studentId)
                 .retrieve()
                 .toEntity(String.class);
     }
